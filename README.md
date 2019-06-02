@@ -1,1 +1,1 @@
-RockStar Developer
+RockStar Developer Course
