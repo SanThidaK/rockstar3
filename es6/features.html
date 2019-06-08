@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gist Eimg</title>
+  </head>
+  <body style="width: 900px; margin: auto;">
+
+    <h1 style="color: #999;"> Learn More es6 features in Gist Ei Mg </h1>
+    <h3 style="color: #999;">
+      Adding data in array using push and map. push change original array but map does not change original array.
+      Click inspect ( Ctrl + Shift + i ).
+    </h3>
+
+    <script type="text/javascript">
+      var arr = [1, 2, 3, 4, 5];
+
+      // Callback Function
+      var maparr = arr.map(function(v){
+        return v*2;
+      });
+
+      var maparr2 = arr.map( v => v * 2 );
+
+      var filterarr = arr.filter( v => v % 2 );
+
+      var filterarr2 = arr.filter( v => !(v % 2) );
+
+      console.log(maparr);
+      console.log(maparr2);
+      console.log(filterarr);
+      console.log(filterarr2);
+
+      // Another adding data example
+      var users = ['Htet', 'Lin'];
+      var usersarr = [...users, 'San'];
+      console.log(usersarr);
+
+      // String Interpolation
+      var name = "San Thida";
+      var hello = `Hello ${name}`;
+      console.log(hello);
+
+      // data add in array using push and map. push change original array but map does not change original array.
+    </script>
+  </body>
+</html>
